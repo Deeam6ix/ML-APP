@@ -17,9 +17,9 @@ calculations. It prompts the user to input their data as a comma-separated strin
 is then converted into a list of floats for further analysis. The class also includes methods
 to calculate various statistical measures such as mean, median, mode, variance, standard 
 deviation, maximum, and minimum values from the provided data."""
-
-self.data=input("Please enter your data separated by commas: ")
-self.data=[float(x) for x in self.data.split(",")]
+def get_data(self):
+    self.data=input("Please enter your data separated by commas: ")
+    self.data=[float(x) for x in self.data.split(",")]
 
 def mean(self,data):
     self.mean=np.mean(data)
