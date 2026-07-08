@@ -3,16 +3,16 @@ import os
 import re
 
 class Login():
-    def __init__(self,name,username,password)
+    def __init__(self,name,user_name,password):
         self.name=name
         self.user_name=user_name
         self.password=password
 
-def name():
-    self.name=input("Please enter your name: ")
+    def name(self):
+        self.name=input("Please enter your name: ")
 
-def user_name():
-    self.user_name=input("Please enter your username: ")
+    def user_name(self):
+        self.user_name=input("Please enter your username: ")
 
 FILE_NAME = "users.csv"
 
@@ -56,8 +56,8 @@ def username_exists(username):
 def register():
     """
     CALL userManager.py()
-    """Registers a new user."""
-    print("\n===== REGISTER =====")
+    """#Registers a new user."""
+    """print("\n===== REGISTER =====")
     name = input("Enter your name: ")
     while True:
         username = input("Enter a username: ")
